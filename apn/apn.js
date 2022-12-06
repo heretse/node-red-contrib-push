@@ -22,6 +22,7 @@ module.exports = function (RED) {
 
                 var notification = new apn.Notification();
                 notification.topic = node.app.topic;
+                notification.pushType = node.app.pushType;
 
                 if (rawNotification) {
                     notification.rawPayload = rawNotification;

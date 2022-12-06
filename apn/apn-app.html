@@ -5,6 +5,7 @@
             name: { value: "" },
             token: { value: "", type: "apn-token", required: true },
             topic: { value: "", required: true },
+            pushType: { value: "alert", required: true },
             production: { value: false }
         },
         label: function () {
@@ -24,6 +25,10 @@
         <input type="text" id="node-config-input-topic">
     </div>
     <div class="form-row">
+        <label for="node-config-input-pushType"><i class="icon-tag"></i> Push Type</label>
+        <input type="text" id="node-config-input-pushType">
+    </div>
+    <div class="form-row">
         <label for="node-config-input-production"><i class="fa fa-wrench"></i> Production</label>
         <input type="checkbox" id="node-config-input-production" style="display: inline-block; width: auto; vertical-align: top;">
     </div>
@@ -38,6 +43,7 @@
     <ul>
         <li><code>APN Token</code> - Configuration for Provider Authentication Tokens</li>
         <li><code>Topic</code> - The destination topic (bundle id) for the notification</li>
+        <li><code>Push Type</code> - The push type for the notification</li>
         <li><code>Production</code> - Specifies which environment to connect to: Production (if true) or Sandbox</li>
     </ul>
 </script>
