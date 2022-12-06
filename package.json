@@ -29,7 +29,7 @@
     "url": "https://github.com/Xzya/node-red-contrib-push"
   },
   "dependencies": {
-    "apn": "2.1.3",
+    "apn": "3.0.0",
     "node-gcm": "0.14.4",
     "web-push": "3.2.2"
   },
